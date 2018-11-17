@@ -1,0 +1,1 @@
+case 'ctf': include _include(APP_PATH.'plugin/mu_ctf/route/ctf.php'); break;

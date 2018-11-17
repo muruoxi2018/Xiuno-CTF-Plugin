@@ -1,0 +1,5 @@
+'avatar_is_empty'=>'请选择头像',
+'directory_create_failed'=>'目录创建失败',
+'write_to_file_failed'=>'文件写入失败',
+'filesize_too_large'=>'文件太大',
+'sql_create_error'=>'数据库写入失败',

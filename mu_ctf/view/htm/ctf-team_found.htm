@@ -1,0 +1,56 @@
+  <?php include _include(APP_PATH.'view/htm/header.inc.htm');?>
+
+  <!--{hook index_start.htm}-->
+  <div class="container jumbo position-relative px-0" style="border-radius:8px;box-shadow: 0 0px 10px #616161;">
+    <img src="" class="w-100" alt="">
+  </div>
+  <div class="my-3 center">
+    <div class="ctf_box">
+      <div class="breadcrumb-item"><a href="./" aria-label="首页"><i class="icon-home"></i></a></div>
+      <div class="breadcrumb-item"><a href="javascript:void(0);">CTF 团队创建</a></div>
+    </div>
+  </div>
+  <div class="row" role="document" style="padding-bottom:15px">
+    <div class="modal-content">
+        <div class="modal-header"> 
+            <h5 class="modal-title" id="exampleModalLabel">创建团队</h5>
+        </div>
+        <form class="form-horizontal" id="form" action="team-found.htm" method="post" role="form">
+            <div class="wap" id="team_found">
+                <div class="inner">
+                    <input type="hidden" value="0" id="isavatar" name="isavatar">
+                    <div class="form-group">
+                        <label>团队名称</label>
+                        <input type="text" value="" class="form-control" id="team_name" name="team_name">
+                    </div>
+                    <div class="form-group">
+                        <label>团队签名</label>
+                        <textarea type="text" value="" class="form-control" id="team_sign" name="team_sign" placeholder="字数不超过50字" rows="2"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label>团队介绍</label>
+                        <textarea type="text" value="" class="form-control" id="introduce" name="introduce" placeholder="字数不超过200字" rows="5"></textarea>
+                    </div>
+                </div>
+                <div class="image-up" style="float:left">
+                    <div class="img_button">
+                        点击上传团队头像
+                    </div>
+                    <img id="portrait" src="">
+                    <div class="avatar_file">
+                        <input id="avatarfile" type="file" accept="image/jpg,image/jpeg,image/gif,image/png">
+                    </div>
+                    <div id="avatar_progress" style="margin-left:100px"><div class="progress_content"></div></div>
+                </div>
+            </div>
+            <div style="clear:both"></div>
+            <div class="modal-footer">
+                <span style="color: #F44336;">创建团队后无法加入其它团队，请谨慎操作</span><input type="submit" value="确定" class="btn btn-primary" data-loading-text="Loading..." id="submit">
+            </div>
+        </form>
+    </div>
+</div>
+  
+  <!--{hook index_end.htm}-->
+  
+  <?php include _include(APP_PATH.'view/htm/footer.inc.htm');?>

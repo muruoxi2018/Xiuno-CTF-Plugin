@@ -1,0 +1,11 @@
+{
+    "name": "CTF插件",
+    "brief": "一个CTF比赛提交答案的插件，提供记分面板",
+    "version": "1.0",
+    "bbs_version": "4.0",
+    "installed": 1,
+    "enable": 1,
+    "hooks_rank": [],
+    "overwrites_rank": [],
+    "dependencies": []
+}

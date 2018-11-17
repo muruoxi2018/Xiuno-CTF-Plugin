@@ -1,0 +1,1226 @@
+  <?php include _include(APP_PATH.'view/htm/header.inc.htm');?>
+
+  <!--{hook index_start.htm}-->
+  <div class="container jumbo position-relative px-0" style="border-radius:8px;box-shadow: 0 0px 10px #616161;">
+    <img src="" class="w-100" alt="">
+  </div>
+  <div class="my-3 center">
+    <button class="t_label">CTF 团队排行</button>
+  </div>
+  <table class="table table-hover my-3" style="background: white; border-radius:5px 5px 5px 5px;">
+    <thead class="member_list_th">
+      <tr class="text-dark">
+        <th class="text-center">排名</th>
+        <th class="text-center rank_number_placeholder">&nbsp;</th>
+        <th>会员名</th>
+        <th class="text-center">加入</th>
+        <th class="text-center">总分</th>
+        <th class="text-center rank_number_placeholder">注册时间</th>
+      </tr>
+    </thead>
+    <tbody class="member_list text-dark" style="font-size:13px;">
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_"><img src="<?php echo $plugin_img; ?>/rank1.png" style="max-height:25px"></th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100143.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> tekkens</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100143)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_"><img src="<?php echo $plugin_img; ?>/rank2.png" style="max-height:25px"></th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100016.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 炮灰大队</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_"><img src="<?php echo $plugin_img;?>/rank3.png" style="max-height:25px"></th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100009.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> AceHub</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100009)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/25</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">4</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100150.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> TooSlow</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100150)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/30</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">5</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100017.htm"><img src="//ctf.pediy.com/upload/team/760/team746760.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> v3r1t4s501</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100017)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">6</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100077.htm"><img src="//ctf.pediy.com/upload/team/885/team816885.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> (r0_0t)</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100077)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">7</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100110.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 雨落星沉</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100110)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">8</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100040.htm"><img src="//ctf.pediy.com/upload/team/520/team772520.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> FiatLux</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100040)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">9</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100089.htm"><img src="//ctf.pediy.com/upload/team/386/team19386.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 丁丙乙</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100089)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">10</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100065.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> ChaMd5安全团队</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100065)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">11</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100185.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> X10Sec</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100185)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/10/07</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">12</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100053.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Asuri_8086</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100053)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">100</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">13</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100000.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Jungle_CN</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100000)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/20</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">14</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100001.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 萌新小队</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/20</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">15</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100002.htm"><img src="//ctf.pediy.com/upload/team/171/team821171.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 行天下</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100002)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/20</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">16</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100003.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 网络风暴</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100003)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/20</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">17</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100004.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Nu1L</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100004)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/21</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">18</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100005.htm"><img src="//ctf.pediy.com/upload/team/257/team809257.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 我也不知道这是什么队</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/22</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">19</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100006.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> hnnd</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100006)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/23</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">20</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100007.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 斗破苍穹f</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100007)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/25</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">21</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100008.htm"><img src="//ctf.pediy.com/upload/team/244/team769244.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> n0body</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100008)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/25</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">22</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100010.htm"><img src="//ctf.pediy.com/upload/team/767/team826767.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> K4</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100010)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/26</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">23</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100011.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> &lt;111&gt;();</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100011)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/27</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">24</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100012.htm"><img src="//ctf.pediy.com/upload/team/893/team697893.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 看场雪Club</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100012)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">25</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100013.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;">   surfacego</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100013)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">26</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100014.htm"><img src="//ctf.pediy.com/upload/team/881/team757881.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 逆向初学团队</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100014)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">27</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100015.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 萌新队</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">28</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100018.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 国庆试试水</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">29</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100019.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Vidar-Team</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100019)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">30</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100020.htm"><img src="//ctf.pediy.com/upload/team/218/team660218.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> K4CT</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100020)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">31</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100021.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> \'</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100021)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">32</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100022.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> reversing4fun</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100022)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">33</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100023.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> W-Hat</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100023)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">34</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100024.htm"><img src="//ctf.pediy.com/upload/team/608/team793608.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 就是干</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100024)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">35</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100025.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 哪个队</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100025)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">36</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100026.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 菜鸟联盟</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100026)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">37</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100027.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> bjfinder2</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100027)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">38</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100028.htm"><img src="//ctf.pediy.com/upload/team/139/team773139.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Sponsors</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100028)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">39</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100029.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Sh3llF0und</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100029)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">40</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100030.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 自力更生</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100030)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">41</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100031.htm"><img src="//ctf.pediy.com/upload/team/420/team746420.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 玄机</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">42</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100032.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> amazing111</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100032)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">43</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100033.htm"><img src="//ctf.pediy.com/upload/team/312/team668312.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> XSG321</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100033)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">44</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100034.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Ithaca</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100034)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">45</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100035.htm"><img src="//ctf.pediy.com/upload/team/753/team794753.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 0o0o0o0o0o</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100035)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">46</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100036.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Aeg_binsec</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">47</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100037.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 飞行模式</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100037)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">48</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100038.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 禠亖</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100038)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">49</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100039.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> gue5t</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100039)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">50</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100041.htm"><img src="//ctf.pediy.com/upload/team/405/team827405.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> HNBJU</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">51</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100042.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 菜鸟队</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100042)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">52</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100043.htm"><img src="//ctf.pediy.com/upload/team/412/team827412.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 取个名字好难123</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100043)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">53</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100044.htm"><img src="//ctf.pediy.com/upload/team/323/team286323.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> AIdot</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100044)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">54</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100045.htm"><img src="//ctf.pediy.com/upload/team/412/team784412.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> LIKERE</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100045)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">55</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100046.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Acbug</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100046)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">56</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100047.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> te5t</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100047)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">57</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100048.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 划水一波</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100048)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">58</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100049.htm"><img src="//ctf.pediy.com/upload/team/484/team817484.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> RNG</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100049)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">59</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100050.htm"><img src="//ctf.pediy.com/upload/team/690/team634690.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 2333</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100050)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">60</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100051.htm"><img src="//ctf.pediy.com/upload/team/922/team749922.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 时臣</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100051)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">61</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100052.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Calil</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100052)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">62</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100054.htm"><img src="//ctf.pediy.com/upload/team/713/team724713.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> K0i</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100054)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">63</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100055.htm"><img src="//ctf.pediy.com/upload/team/668/team735668.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 妳的名稱過長</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100055)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">64</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100056.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> lawhack</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100056)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">65</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100057.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> N3rD7e4m</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100057)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">66</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100058.htm"><img src="//ctf.pediy.com/upload/team/959/team711959.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 签完到逃</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">67</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100059.htm"><img src="//ctf.pediy.com/upload/team/260/team740260.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Baymax0day</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100059)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">68</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100060.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> IamGroot</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100060)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">69</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100061.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Deep_</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100061)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">70</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100062.htm"><img src="//ctf.pediy.com/upload/team/420/team814420.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 1cesn0w</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100062)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">71</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100063.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> FresherMan</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100063)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">72</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100064.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> ???</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100064)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">73</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100066.htm"><img src="//ctf.pediy.com/upload/team/567/team639567.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> w0ooo</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100066)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">74</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100067.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> salt+fish</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100067)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">75</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100068.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 不知道该叫什么好了</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100068)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">76</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100069.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 啊哈哈哈哈哈哈哈哈哈</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100069)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">77</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100070.htm"><img src="//ctf.pediy.com/upload/team/513/team819513.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 中山队</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100070)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">78</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100071.htm"><img src="//ctf.pediy.com/upload/team/819/team771819.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> NEX_BIN</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100071)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">79</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100072.htm"><img src="//ctf.pediy.com/upload/team/306/team752306.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Ronpa</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100072)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">80</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100073.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Sh4rk</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100073)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">81</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100074.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> f1a9</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100074)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">82</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100075.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> fast@2018</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100075)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">83</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100076.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Nxee</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100076)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">84</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100078.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> feonix</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100078)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">85</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100079.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> NCGroup</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100079)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">86</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100080.htm"><img src="//ctf.pediy.com/upload/team/263/team808263.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Reventant</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100080)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">87</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100081.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 爸爸说的都</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100081)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">88</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100082.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 0xF</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100082)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">89</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100083.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 抽象语法树</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100083)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">90</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100084.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> kaliposion</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100084)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">91</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100085.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 404gg</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100085)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">92</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100086.htm"><img src="//ctf.pediy.com/upload/team/305/team796305.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> team_cnk</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100086)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">93</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100087.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 来打我啊</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100087)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">94</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100088.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> xiangdd</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100088)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/28</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">95</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100131.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 试试看</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100131)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">96</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100090.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 14z</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100090)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">97</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100091.htm"><img src="//ctf.pediy.com/upload/team/145/team592145.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> cript</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100091)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">98</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100092.htm"><img src="//ctf.pediy.com/upload/team/660/team825660.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 万物皆虚</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100092)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">99</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100093.htm"><img src="//ctf.pediy.com/upload/team/453/team802453.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Num_0001</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100093)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">100</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100094.htm"><img src="//ctf.pediy.com/upload/team/322/team771322.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> G12</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100094)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">101</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100095.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 艾诺</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100095)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">102</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100096.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 123121</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100096)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">103</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100097.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> fade-vivi</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100097)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">104</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100098.htm"><img src="//ctf.pediy.com/upload/team/506/team827506.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 凑个热闹</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100098)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">105</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100099.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 是时候搞一波事情了</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100099)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">106</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100100.htm"><img src="//ctf.pediy.com/upload/team/495/team811495.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 不想起名字</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100100)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">107</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100101.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> amliaW4</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100101)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">108</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100102.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> supconICAS</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100102)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">109</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100103.htm"><img src="//ctf.pediy.com/upload/team/675/team760675.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 1023</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100103)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">110</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100104.htm"><img src="//ctf.pediy.com/upload/team/954/team727954.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Ma1tose</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100104)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">111</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100105.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> _请叫我红领巾</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100105)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">112</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100106.htm"><img src="//ctf.pediy.com/upload/team/242/team681242.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 垫底的来</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">113</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100107.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> r3kapig</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100107)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">114</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100108.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;">  请叫我红领巾 </a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100108)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">115</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100109.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> what?</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100109)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">116</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100111.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> hit_0day</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100111)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">117</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100112.htm"><img src="//ctf.pediy.com/upload/team/286/team819286.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> hubu-stu</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100112)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">118</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100113.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 淡雅D巴泽尔</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100113)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">119</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100114.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 瞌睡兮兮</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100114)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">120</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100115.htm"><img src="//ctf.pediy.com/upload/team/383/team546383.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 一份鸡腿饭</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100115)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">121</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100116.htm"><img src="//ctf.pediy.com/upload/team/787/team773787.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> BigD</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100116)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">122</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100117.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 20180929</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100117)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">123</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100118.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> So!0</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100118)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">124</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100119.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Magic8ytes</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100119)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">125</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100120.htm"><img src="//ctf.pediy.com/upload/team/065/team770065.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 一群小菜鸡</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100120)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">126</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100121.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 一个大风车</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100121)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">127</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100122.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 专业垫底30年</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100122)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">128</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100123.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> GoldsN0w</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100123)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">129</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100124.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 我才不是垫底的</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100124)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">130</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100125.htm"><img src="//ctf.pediy.com/upload/team/548/team770548.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> d0g3_17_re</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100125)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">131</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100126.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 湖边看雪</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100126)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">132</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100127.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> CPU_12345</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100127)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">133</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100128.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> war wolf</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100128)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">134</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100129.htm"><img src="//ctf.pediy.com/upload/team/724/team794724.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> SOS团</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100129)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">135</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100130.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 0wning</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100130)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">136</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100132.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 魂之火焰</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100132)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">137</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100133.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 66667777</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100133)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">138</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100134.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> anytube</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100134)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">139</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100135.htm"><img src="//ctf.pediy.com/upload/team/602/team827602.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 冉冉滋补鸽汤馆</a></td>
+        <td style="text-align:center;color:#848484;font-size:10px">已满</td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">140</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100136.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 小庄村</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100136)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number" style="display: table-row;">
+        <th scope="row" class="text-center rank_number_">141</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100137.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> UYJ</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100137)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">142</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100138.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> sennse</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100138)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">143</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100139.htm"><img src="//ctf.pediy.com/upload/team/184/team749184.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 一曲肝肠断</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100139)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">144</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100140.htm"><img src="//ctf.pediy.com/upload/team/394/team807394.png?" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Many_Noob</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100140)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">145</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100141.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 战队111</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100141)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">146</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100142.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> treebacker</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100142)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">147</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100144.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> lanlansec</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100144)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">148</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100145.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> Xp0int</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100145)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">149</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100146.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 进来看看</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100146)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+      <tr class="rank_number">
+        <th scope="row" class="text-center rank_number_">150</th>
+        <td class="text-center rank_number_placeholder">&nbsp;</td>
+        <td style="vertical-align: inherit;"><a href="//ctf.pediy.com/team-myctf-100147.htm"><img src="<?php echo $plugin_img;?>/avatar.png" class="img-circle" width="25px" style="width: 26px;border-radius: 15rem;"> 一本</a></td>
+        <td style="text-align:center;"><span data-toggle="modal" data-target="#teamJoin" onclick="joinTeam(100147)">加入</span></td>
+        <td class="text-center" style="vertical-align: inherit;">0</td>
+        <td class="text-center rank_number_placeholder" style="vertical-align: inherit;">2018/09/29</td>
+      </tr>
+    </tbody>
+  </table>
+  <!--{hook index_end.htm}-->
+  
+  <?php include _include(APP_PATH.'view/htm/footer.inc.htm');?>
