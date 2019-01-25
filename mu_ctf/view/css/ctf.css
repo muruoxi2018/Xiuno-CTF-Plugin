@@ -189,8 +189,8 @@ border:1px solid transparent;
 }
 
 .avatar {
-    width: 20px;
-    height: 20px;
+    width: 26px;
+    height: 26px;
     margin-right: 7px;
     border-radius: 50px;
 }
@@ -286,4 +286,60 @@ textarea{
     .form-control{
         width:100%;
     }
+}
+
+/*
+    团队信息
+ */
+
+.tabs_head{
+    width:100%;
+    min-height: 45px;
+}
+.tabs_item{
+    box-sizing: border-box;
+    float: left;
+    margin-right: 20px;
+    font-size: 1.2rem;
+    cursor: pointer;
+        margin-bottom: 11px;
+}
+@media screen and (max-width: 768px) {
+    .tabs_item{
+    float: none;
+    }
+}
+.tab_pane{
+    margin-top: 10px;
+    width: 100%;
+}
+.team-info div{
+    margin-top: 10px;
+}
+.team-info label{
+    font-size: 1.1rem;
+    margin-right: 20px;
+    color: #a2a2a2;
+    width: 90px;
+}
+.team-members thead tr{
+    font-size:1.0rem;
+    color:#a2a2a2;
+}
+.team-members thead td{
+    border-top:none;
+}
+.team-members tbody tr{
+    font-size:14px;
+}
+.team-members tbody tr img{
+    width:30px;
+    height:30px;
+    margin-right:0.5rem;
+    border-radius:50px;
+}
+
+.is-active{
+    color: #0099ee;
+    border-bottom: 4px solid #0099ee;
 }

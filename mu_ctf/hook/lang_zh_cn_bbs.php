@@ -3,3 +3,5 @@
 'write_to_file_failed'=>'文件写入失败',
 'filesize_too_large'=>'文件太大',
 'sql_create_error'=>'数据库写入失败',
+'create_success'=>'创建成功',
+'team_name_repeat'=>'团队名称已存在',

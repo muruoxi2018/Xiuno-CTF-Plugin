@@ -1,0 +1,155 @@
+  <?php include _include(APP_PATH.'view/htm/header.inc.htm');?>
+
+  <!--{hook index_start.htm}-->
+  <div class="container jumbo position-relative px-0" style="border-radius:8px;box-shadow: 0 0px 10px #616161;">
+  	<img src="" class="w-100" alt="">
+  </div>
+  <div class="my-3 center">
+  	<div class="ctf_box">
+  		<div class="breadcrumb-item"><a href="./" aria-label="首页"><i class="icon-home"></i></a></div>
+  		<div class="breadcrumb-item"><a href="javascript:void(0);">CTF 团队信息</a></div>
+  	</div>
+  </div>
+  <?php
+  $array = db_sql_find_one("SELECT * FROM bbs_ctf WHERE id = ".param(2));
+  $linshi = user_read($array['user1']);
+  ?>
+  <div class="p-3 bg-white">
+  	<div class="tabs_head">
+  		<div class="tabs_item is-active">团队信息</div>
+  		<div class="tabs_item">团队成员</div>
+  		<div class="tabs_item">成员动态</div>
+  	</div>
+  	<div class="tabs_content">
+  		<div class="tab_pane">
+  			<div class="table-responsive">
+  				<table class="table table-borderless">
+  					<tbody>
+  						<tr>
+
+  							<td>
+  								<img class="avatar-4" src="<?php echo $array['avatar']?>">
+
+  							</td>
+  							<td style="vertical-align: middle;">
+  								<p><?php echo $array['name']?></p>
+  							</td>
+  						</tr>
+  						<tr>
+
+  							<td width="100">团队名称：</td>
+  							<td><?php echo $array['name']?></td>
+
+  						</tr>
+  						<tr>
+
+  							<td width="100">团队签名：</td>
+  							<td><?php echo $array['sign']?></td>
+
+  						</tr>
+  						<tr>
+
+  							<td width="100">创建者：</td>
+  							<td><?php echo $linshi['username'] ?></td>
+
+  						</tr>
+  						<tr>
+
+  							<td width="100">团队总分：</td>
+  							<td><?php echo $array['points']?></td>
+
+  						</tr>
+  						<tr>
+
+  							<td width="100">团队介绍：</td>
+  							<td><?php echo $array['introduce']?></td>
+
+  						</tr>
+  						<tr>
+
+  							<td width="100">注册时间：</td>
+  							<td><?php echo $array['creattime']?></td>
+
+  						</tr>
+  					</tbody>
+  				</table>
+  			</div>
+  		</div>
+  		<div class="tab_pane" style="display:none">
+  			<div class="team-members">
+  				<table class="table">
+  					<thead>
+  						<tr>
+  							<td>成员名称</td>
+  							<td>职位</td>
+  							<td>积分</td>
+  						</tr>
+  					</thead>
+  					<tbody>
+  						<?php
+							for($i=1;$i<=4;$i++){
+							if(empty($array['user'.$i])){break;}
+							$create_info = user_read($array['user'.$i]);
+							$shenfen = $i == 1?'队长' :'队员';
+							$user_points = $array['user'.$i.'_points'];
+							if(empty($user_points)){$user_points=0;}
+							
+							echo '<tr>
+								<td>
+									<img src="'.$create_info["avatar_url"].'">
+									<a href="user-'.$create_info["uid"].'.htm" style="color:#4db3ff">'.$create_info["username"].'</a>
+								</td>
+								<td style="color:#a2a2a2">'.$shenfen.'</td>
+								<td>'.$user_points.'</td>
+							</tr>';
+						}
+  						?>
+  					</tbody>
+  				</table>
+  			</div>
+  		</div>
+  		<div class="tab_pane" style="display:none">
+  			<div class="log">
+  				<ul class="list-group">
+  					<li class="list-group-item"><span>2018-10-12 10:05:47</span><span>
+  						<a href="//bbs.pediy.com/user-494530.htm" style="color:#4db3ff;margin-right:10px">炸鸡大侠</a>
+  						加入了团队								<a href="team-myctf-100016.htm" style="color:#4db3ff;margin-left:10px">炮灰大队</a>
+  					</span></li>
+  					<li class="list-group-item"><span>2018-10-12 09:55:01</span><span>
+  						<a href="//bbs.pediy.com/user-780115.htm" style="color:#4db3ff;margin-right:10px">wx_子陵</a>
+  						退出了团队								<a href="team-myctf-100016.htm" style="color:#4db3ff;margin-left:10px">炮灰大队</a>
+  					</span></li>
+  					<li class="list-group-item"><span>2018-09-30 10:48:50</span><span>
+  						<a href="//bbs.pediy.com/user-827726.htm" style="color:#4db3ff;margin-right:10px">无茗lb</a>
+  						加入了团队								<a href="team-myctf-100016.htm" style="color:#4db3ff;margin-left:10px">炮灰大队</a>
+  					</span></li>
+  					<li class="list-group-item"><span>2018-09-30 10:05:30</span><span>
+  						<a href="//bbs.pediy.com/user-228850.htm" style="color:#4db3ff;margin-right:10px">joyoxy</a>
+  						加入了团队								<a href="team-myctf-100016.htm" style="color:#4db3ff;margin-left:10px">炮灰大队</a>
+  					</span></li>
+  					<li class="list-group-item"><span>2018-09-30 03:52:19</span><span>
+  						<a href="//bbs.pediy.com/user-807503.htm" style="color:#4db3ff;margin-right:10px">jacklove_397504</a>
+  						加入了团队								<a href="team-myctf-100016.htm" style="color:#4db3ff;margin-left:10px">炮灰大队</a>
+  					</span></li>
+  					<li class="list-group-item"><span>2018-09-30 03:46:26</span><span>
+  						<a href="//bbs.pediy.com/user-99882.htm" style="color:#4db3ff;margin-right:10px">xiaofu</a>
+  						完成了题目								<a href="game-team_fight-71.htm" style="color:#4db3ff;margin-left:10px">叹息之墙</a>
+  					</span></li>
+  					<li class="list-group-item"><span>2018-09-28 20:16:13</span><span>
+  						<a href="//bbs.pediy.com/user-780115.htm" style="color:#4db3ff;margin-right:10px">wx_子陵</a>
+  						加入了团队								<a href="team-myctf-100016.htm" style="color:#4db3ff;margin-left:10px">炮灰大队</a>
+  					</span></li>
+  					<li class="list-group-item"><span>2018-09-28 13:39:22</span><span>
+  						<a href="//bbs.pediy.com/user-99882.htm" style="color:#4db3ff;margin-right:10px">xiaofu</a>
+  						报名了活动								<a href="game-team_list-6.htm" style="color:#4db3ff;margin-left:10px">看雪2018国庆题</a>
+  					</span></li>
+  				</ul>
+  			</div>
+  		</div>
+  	</div>
+
+  </div>
+
+  <!--{hook index_end.htm}-->
+
+  <?php include _include(APP_PATH.'view/htm/footer.inc.htm');?>
